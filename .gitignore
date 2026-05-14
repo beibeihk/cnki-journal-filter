@@ -1,0 +1,18 @@
+# This folder contains many local browser profiles, screenshots, and
+# temporary automation artifacts. Only publish the core extension files.
+*
+!.gitignore
+!README.md
+!PRIVACY.md
+!manifest.json
+!popup.html
+!popup.css
+!popup.js
+!content.js
+!background.js
+!icons/
+!icons/icon16.png
+!icons/icon32.png
+!icons/icon48.png
+!icons/icon128.png
+!icons/icon300.png
