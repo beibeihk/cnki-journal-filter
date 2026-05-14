@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>知网期刊筛选器</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h2>知网期刊筛选器</h2>
+    <span class="version">v1.0</span>
+  </div>
+
+  <div class="toolbar">
+    <button id="btn-select-all" class="btn-small">全选</button>
+    <button id="btn-clear-all" class="btn-small">清空</button>
+    <button id="btn-expand-all" class="btn-small">展开</button>
+    <button id="btn-collapse-all" class="btn-small">收起</button>
+  </div>
+
+  <div class="quick-actions">
+    <button id="btn-quick-a" class="btn-tag">A类</button>
+    <button id="btn-quick-a-minus" class="btn-tag">A-类</button>
+    <button id="btn-quick-b-plus" class="btn-tag">B+类</button>
+    <button id="btn-quick-b" class="btn-tag">B类</button>
+  </div>
+
+  <div class="journal-list" id="journal-list"></div>
+
+  <div class="custom-section">
+    <label>自定义期刊（用逗号、顿号或换行分隔）：</label>
+    <textarea id="custom-journals" placeholder="输入期刊名，例如：&#10;经济研究&#10;管理世界"></textarea>
+  </div>
+
+  <div class="status-bar">
+    <span id="selected-count">已选 0 个期刊</span>
+  </div>
+
+  <div class="actions">
+    <button id="btn-apply" class="btn-primary">应用筛选</button>
+    <button id="btn-reset" class="btn-secondary">重置</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
